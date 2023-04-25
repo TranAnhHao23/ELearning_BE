@@ -44,6 +44,10 @@ app.post('/send-email', (req, res) => {
     })
 })
 
+app.get('/healthcheck', (req, res) => {
+    res.send('Successfully')
+})
+
 app.listen(3000, () => {
     console.log('Server started on port 3000')
 })
